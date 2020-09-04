@@ -1,0 +1,180 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+.container{
+    width: 1400px;
+    min-height: 50px;
+    height: auto;    
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+}
+
+/* ================== menu ======================*/
+#containerMenu{
+    min-height: 100px;
+    width: 100%;
+    background: #292929;
+    position: fixed;
+}
+
+#containerMenu .container{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+#titulo{
+    height: 100px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: #fff;
+    font-family: arial;
+}
+
+#containerLogin{
+    height: 100px;
+    width: 400px;
+    display: flex;
+    justify-content: space-around;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#containerLogin input[type="text"], #containerLogin input[type="password"]{
+    height: 30px;
+    width: 150px;
+    border-radius: 40px;
+    border: 2px solid #292929;
+    padding-left: 10px;
+    font-size: 1.5em;
+    outline: none;
+    box-sizing: border-box;    
+}
+
+#containerLogin input[type="submit"]{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    border: 2px solid #292929;
+    font-size: 1.5em;
+    outline: none;
+    cursor: pointer;
+}
+
+#configBtn{
+    height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+/* ================ conteudo ===============*/
+
+.containerconteudo, .containerConteudo{
+    min-height: 50px;
+    width: 100%;
+    margin-top: 100px;
+    padding: 10px;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+.containerConteudo{
+    margin: 0;
+}
+
+.cardLivro{
+    min-height: 50px;
+    height: auto;
+    width: auto;
+    padding: 10px;
+    background: #292929;
+    float: left;
+    border-radius: 15px;
+    margin-right: 40px;
+    margin-bottom: 20px;
+}
+
+.containerImg{
+    height: 280px;
+    width: 220px;
+    background: #f58b00;
+    overflow: hidden;
+    margin-bottom: 10px;
+}
+
+.containerImg img{
+    height: 100%;
+    width: 100%;
+    user-select: none;
+}
+
+.containerInfoLivro{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+}
+
+.containerInfoLivro h1{
+    height: 40px;
+    width: 100%;
+    color: #fff;
+    text-transform: capitalize;
+    font-family: arial;    
+}
+
+.nomeAutor{
+    color: #fff;
+}
+
+.capa{
+    color: #fff;
+}
+
+
+#containerHQ{
+    height: 80px;
+    width: 100%;
+    background: #292929;
+    padding-top: 20px;
+    padding-left: 100px;
+    box-sizing: border-box;    
+}
+
+#containerHQ .container h1{
+    height: 80px;
+    width: 100%;    
+    font-size: 2em;
+    color: #fff;
+    text-transform: uppercase;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

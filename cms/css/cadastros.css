@@ -1,0 +1,234 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(45deg, rgba(222, 162, 0, .3), rgba(67, 67, 67, .7)), url(../img/fundo.jpg);
+    background-size: cover;
+}
+
+#containerCadastro, #containerCadastroNivel{
+    min-height: 50px;
+    height: auto;
+    width: 500px;
+    border-radius: 15px;
+    background: rgba(0 ,0 ,0 ,.7);
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#containerCadastroNivel{
+    width: 800px;
+}
+
+#containerCadastro form, #containerCadastroNivel form{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding-top: 30px;
+    box-sizing: border-box;
+}
+
+#containerCadastro input[type="text"], #containerCadastro input[type="password"], 
+#containerCadastro input[type="email"], #containerCadastro select,
+#containerCadastroNivel input[type="text"], #containerCadastroNivel select{
+    height: 45px;
+    width: 90%;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+    border-bottom: 2px solid #fff;
+    background: transparent;
+    color: #fff;    
+}
+
+#containerCadastro input[type="text"]:hover, #containerCadastro select:hover,
+#containerCadastro input[type="password"]:hover, #containerCadastro input[type="email"]:hover
+#containerCadastroNivel input[type="text"]:hover, #containerCadastroNivel select:hover{
+    border-color: #dea200;
+    color: #dea200;
+    transition: .5s;
+    
+}
+
+#configBtn{
+    min-height: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+#configBtn input[type="submit"], #voltar{
+    height: 45px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    border: 3px solid #292929;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-weight: bold;
+    margin-right: 40px;
+    font-family: arial;
+    background: #FFF;
+    cursor: pointer;
+    color: #292929; 
+    outline: none;
+}
+
+#configBtn input[type="submit"]:hover, #voltar:hover{
+    transition: .5s;
+    background: #292929;
+    color: #dea200;    
+}
+
+option{
+    color: #292929;
+}
+
+/* ============== CONFIG CHECKBOX =============*/
+
+.configCheck{
+    min-height: 50px;
+    height: auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #fff;
+}
+
+.configCheck input[type="checkbox"]{
+    position: relative;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    -webkit-appearance: none;
+    background: #292929;
+    outline: none;
+    margin-right: 5px;      
+    box-shadow: inset 0 0 10px 5px rgba(0,0,0,.5)
+    , 0 0 0 3px rgba(255,255,255,.5); 
+}
+
+.configCheck input[type="checkbox"]:checked{
+    background: #d99502;    
+    box-shadow: inset 0 0 10px 4px rgba(158, 110, 5,.5)
+    , 0 0 0 3px rgba(255,255,255,.7),
+    0 0 10px 2px rgba(255,255,255,.7) ; 
+}
+
+.configCheck p{
+    font-size: 1.5em;
+    font-weight: bold;
+    font-family: arial;
+    margin-right: 50px;
+}
+
+/* ====================== CONFIG IMG ====================*/
+
+#containerImg{
+    min-height: 50px;
+    width: 400px;
+    border-radius: 15px;
+    background: rgba(0,0,0,0.5);
+    margin-right: 50px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+#containerImg form{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+#containerImg form label{
+    height: 50px;
+    width: auto;
+    padding-left: 20px;
+    padding-right: 20px;
+    margin-bottom: 20px;
+    border: 2px solid #fff;
+    border-radius: 40px;
+    text-transform: uppercase;
+    font-size: 1.5em;
+    font-family: arial;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: #fff;
+    cursor: pointer;
+}
+
+#containerImg form label:hover{
+    background: #d99502;
+    transition: .5s;    
+}
+
+#vizualizarImg{
+/*
+    height: auto;
+    width: auto;
+*/
+    height: 355px;
+    width: 236px;
+    background: #fff;
+    border-radius: 15px;
+    border: 2px solid #fff;
+    overflow: hidden;
+    background: transparent;
+    user-select: none;
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+#vizualizarImg img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    background-origin: border-box;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+
+
+
+
+
